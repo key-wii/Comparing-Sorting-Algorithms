@@ -105,6 +105,7 @@ int partition(int arr[], int left, int right, int kth) {
 }
 
 
+//Currently unused
 double runAlgorithm() {
     int n[] = {10, 50, 100, 500, 1000};
     for (int n = 2; n <= sizeof(n); n++) {
@@ -117,6 +118,7 @@ double runAlgorithm() {
             int arr[] = {4, 2, 7, 5, 8, 200, 6, 42, 9};
             int size = sizeof(arr) / sizeof(arr[0]);
 
+            //no idea why this code breaks the debugger even when it is never used at all so it's commented out for now
             /*time_stamp start = time_point_cast<microseconds>(system_clock::now());
 
             MergeSort(arr, size, k[i]); //run algorithm dynamically instead of hard-coding
