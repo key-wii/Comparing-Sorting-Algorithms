@@ -150,7 +150,7 @@ void runAlgorithm2(int baseArr[]) {
             int size = sizeof(vec) / sizeof(vec[0]);
 
             uint64_t start = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
-            cout << "MergeSort ------------ kth smallest element: " << MergeSort(vec, size, k[i]) << "\n";
+            cout << "QuickSortIterative --- kth smallest element: " << QuickSortIterative(vec, 0, size - 1, k[i]) << "\n";
             uint64_t end = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
             long long elapsed_microseconds = end - start;
             
@@ -176,7 +176,7 @@ void runAlgorithm3(int baseArr[]) {
             int size = sizeof(vec) / sizeof(vec[0]);
 
             uint64_t start = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
-            cout << "MergeSort ------------ kth smallest element: " << MergeSort(vec, size, k[i]) << "\n";
+            cout << "QuickSortRecursive --- kth smallest element: " << QuickSortRecursive(vec, 0, size - 1, k[i]) << "\n";
             uint64_t end = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
             long long elapsed_microseconds = end - start;
             
@@ -202,7 +202,7 @@ void runAlgorithm4(int baseArr[]) {
             int size = sizeof(vec) / sizeof(vec[0]);
 
             uint64_t start = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
-            cout << "MergeSort ------------ kth smallest element: " << MergeSort(vec, size, k[i]) << "\n";
+            cout << "MMRecursive ---------- kth smallest element: " << MMRecursive(vec, 0, size - 1, k[i]) << "\n";
             uint64_t end = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
             long long elapsed_microseconds = end - start;
             
