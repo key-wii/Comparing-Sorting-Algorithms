@@ -18,6 +18,7 @@ int MergeSort(vector<int> vec, int size, int kth) {
 }
 
 
+/*
 int partition(vector<int> vec, int left, int right);
 int QuickSortIterative(vector<int> vec, int low, int high, int kth) {
     if (kth > 0 && kth <= high - low + 1) {
@@ -57,7 +58,6 @@ int partition(vector<int> vec, int left, int right) {
     swap(&vec[i], &vec[right]);
     return i;
 }
-
 
 int partition(vector<int> vec, int left, int right, int kth);
 int findMedian(vector<int> vec, int size) {
@@ -107,7 +107,7 @@ int partition(vector<int> vec, int left, int right, int kth) {
     }
     swap(&vec[i], &vec[right]);
     return i;
-}
+}*/
 
 
 void runAlgorithm1(int baseArr[]) {
@@ -136,7 +136,7 @@ void runAlgorithm1(int baseArr[]) {
         cout << "Average Duration: " << avg << " microseconds" << "\n";
     }
 }
-void runAlgorithm2(int baseArr[]) {
+/*void runAlgorithm2(int baseArr[]) {
     int ns[] = {10, 50, 100, 500, 1000};
     for (int n = 2; n <= sizeof(n); n++) {
         int k[] = {1, n / 4, n / 2, 3 * n / 4, n};
@@ -213,7 +213,7 @@ void runAlgorithm4(int baseArr[]) {
         double avg = sum / tests;
         cout << "Average Duration: " << avg << " microseconds" << "\n";
     }
-}
+}*/
 
 
 int main() {
@@ -223,9 +223,9 @@ int main() {
         /*int size = sizeof(arr) / sizeof(arr[0]);
         int kth;*/
         runAlgorithm1(arr);
-        runAlgorithm2(arr);
+        /*runAlgorithm2(arr);
         runAlgorithm3(arr);
-        runAlgorithm4(arr);
+        runAlgorithm4(arr);*/
         /*cout << "Enter kth (or 0 to exit): ";
         cin >> kth;
         if (kth == 0) break;
